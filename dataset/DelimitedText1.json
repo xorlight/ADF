@@ -1,0 +1,220 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"ProductID": {
+				"type": "string"
+			},
+			"ProductPrice": {
+				"type": "int"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "dummy-data.csv",
+				"container": "rawdata"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Type",
+				"type": "String"
+			},
+			{
+				"name": "SKU",
+				"type": "String"
+			},
+			{
+				"name": "Name",
+				"type": "String"
+			},
+			{
+				"name": "Published",
+				"type": "String"
+			},
+			{
+				"name": "Is featured?",
+				"type": "String"
+			},
+			{
+				"name": "Visibility in catalog",
+				"type": "String"
+			},
+			{
+				"name": "Short description",
+				"type": "String"
+			},
+			{
+				"name": "Description",
+				"type": "String"
+			},
+			{
+				"name": "Date sale price starts",
+				"type": "String"
+			},
+			{
+				"name": "Date sale price ends",
+				"type": "String"
+			},
+			{
+				"name": "Tax class",
+				"type": "String"
+			},
+			{
+				"name": "In stock?",
+				"type": "String"
+			},
+			{
+				"name": "Stock",
+				"type": "String"
+			},
+			{
+				"name": "Backorders allowed?",
+				"type": "String"
+			},
+			{
+				"name": "Sold individually?",
+				"type": "String"
+			},
+			{
+				"name": "Weight (kg)",
+				"type": "String"
+			},
+			{
+				"name": "Length (cm)",
+				"type": "String"
+			},
+			{
+				"name": "Width (cm)",
+				"type": "String"
+			},
+			{
+				"name": "Height (cm)",
+				"type": "String"
+			},
+			{
+				"name": "Allow customer reviews?",
+				"type": "String"
+			},
+			{
+				"name": "Purchase note",
+				"type": "String"
+			},
+			{
+				"name": "Sale price",
+				"type": "String"
+			},
+			{
+				"name": "Regular price",
+				"type": "String"
+			},
+			{
+				"name": "Categories",
+				"type": "String"
+			},
+			{
+				"name": "Tags",
+				"type": "String"
+			},
+			{
+				"name": "Shipping class",
+				"type": "String"
+			},
+			{
+				"name": "Images",
+				"type": "String"
+			},
+			{
+				"name": "Download limit",
+				"type": "String"
+			},
+			{
+				"name": "Download expiry days",
+				"type": "String"
+			},
+			{
+				"name": "Parent",
+				"type": "String"
+			},
+			{
+				"name": "Grouped products",
+				"type": "String"
+			},
+			{
+				"name": "Upsells",
+				"type": "String"
+			},
+			{
+				"name": "Cross-sells",
+				"type": "String"
+			},
+			{
+				"name": "External URL",
+				"type": "String"
+			},
+			{
+				"name": "Button text",
+				"type": "String"
+			},
+			{
+				"name": "Download 1 name",
+				"type": "String"
+			},
+			{
+				"name": "Download 1 URL",
+				"type": "String"
+			},
+			{
+				"name": "Attribute 1 name",
+				"type": "String"
+			},
+			{
+				"name": "Attribute 1 value(s)",
+				"type": "String"
+			},
+			{
+				"name": "Attribute 1 visible",
+				"type": "String"
+			},
+			{
+				"name": "Attribute 1 global",
+				"type": "String"
+			},
+			{
+				"name": "Attribute 2 name",
+				"type": "String"
+			},
+			{
+				"name": "Attribute 2 value(s)",
+				"type": "String"
+			},
+			{
+				"name": "Attribute 2 visible",
+				"type": "String"
+			},
+			{
+				"name": "Attribute 2 global",
+				"type": "String"
+			},
+			{
+				"name": "Attribute 1 default",
+				"type": "String"
+			},
+			{
+				"name": "Attribute 2 default",
+				"type": "String"
+			}
+		]
+	}
+}
